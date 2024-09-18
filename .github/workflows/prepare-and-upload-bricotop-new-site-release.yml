@@ -9,6 +9,8 @@ jobs:
             - name: Checkout site code
               uses: actions/checkout@v4
             
+            - run: npm ci
+
             - name: Build site and prepare final index.html
               run: npm run build:publish
 
@@ -16,3 +18,5 @@ jobs:
             
             - name: check build success
               run: ls -l dist
+            
+            - run: echo "Where am i" && pwd
