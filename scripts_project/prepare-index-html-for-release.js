@@ -2,8 +2,8 @@ import path from 'path'
 import fs from 'fs/promises'
 import { getMainAssestsFilesFromDist } from './utils.js'
 ;(async () => {
-  const pathToIndexHtml = path.join('.', '..', '/dist/index.html')
-  const pathToAssets = path.join('.', '..', '/dist/assets/')
+  const pathToIndexHtml = path.join('.', '/dist/index.html')
+  const pathToAssets = path.join('.', '/dist/assets/')
 
   const mainAssetsFiles = await getMainAssestsFilesFromDist(pathToAssets)
 
