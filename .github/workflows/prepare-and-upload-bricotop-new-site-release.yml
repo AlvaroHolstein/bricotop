@@ -1,7 +1,7 @@
 name: Update Bricotop Website
 on: 
     push:
-        branches: [prod]
+        branches: [main, prod]
 jobs:
     build-and-prepare-site:
         runs-on: ubuntu-latest
@@ -14,9 +14,10 @@ jobs:
             - name: Build site and prepare final index.html
               run: npm run build:publish
 
+            - run: echo "Where am i" && pwd && ls -l
+            
             - run: echo "I could now use the linode api to upload"
             
             - name: check build success
               run: ls -l dist
             
-            - run: echo "Where am i" && pwd
