@@ -10,12 +10,11 @@ jobs:
               uses: actions/checkout@v4
             
             - run: npm ci
+            - run: echo "Where am i" && pwd && ls -l
 
             - name: Build site and prepare final index.html
               run: npm run build:publish
 
-            - run: echo "Where am i" && pwd && ls -l
-            
             - run: echo "I could now use the linode api to upload"
             
             - name: check build success
