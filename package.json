@@ -18,6 +18,8 @@
     "bundle-all-in-index-html": "node scripts_project/prepare-index-html-for-release.js"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.2.3",
     "pinia": "^2.1.7",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
@@ -39,6 +41,7 @@
     "jsdom": "^24.1.0",
     "npm-run-all2": "^6.2.0",
     "prettier": "^3.2.5",
+    "sass": "^1.79.4",
     "serve": "^14.2.3",
     "start-server-and-test": "^2.0.4",
     "typescript": "~5.4.0",
